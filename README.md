@@ -27,7 +27,7 @@ $$ A\left(\sum_i z_i-K\right)^2 $$
 
 resulting in a Quadratic Unconstrained Binary Optimization (QUBO) problem. The QUBO formulation is then mapped to an Ising Hamiltonian,
 
-$$ H_C = cI + \sum_i h_i Z_i + \sum_{i<j}J_{ij}Z_iZ_j $$
+$$ H_C = cI + \sum_i h_i Z_i + \sum_{i\lt j}J_{ij}Z_iZ_j $$
 
 which can be implemented using quantum gates. The notebook implements QAOA using Qiskit and optimizes its variational parameters using SciPy. An exhaustive classical search provides the exact optimum against which the quantum algorithm is evaluated.
 
